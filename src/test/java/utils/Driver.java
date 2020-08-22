@@ -27,4 +27,9 @@ public class Driver {
         }
         return driver;
     }
+
+    public static void quitDriver(){
+        getDriver().quit();
+        driver = null;
+    }
 }

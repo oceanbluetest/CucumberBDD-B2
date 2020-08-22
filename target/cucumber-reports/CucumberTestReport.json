@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-08-20T02:00:05.598Z",
+        "start_timestamp": "2020-08-22T13:28:36.150Z",
         "before": [
           {
             "result": {
-              "duration": 1411008000,
+              "duration": 1594002000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 5,
-        "name": "Verify Home Page title",
+        "line": 4,
+        "name": "Testing youtube",
         "description": "",
-        "id": "home-page-tests;verify-home-page-title",
+        "id": "class-tasks;testing-youtube",
         "after": [
           {
             "result": {
-              "duration": 77902000,
+              "duration": 95064000,
               "status": "passed"
             },
             "match": {
@@ -35,113 +35,77 @@
         "steps": [
           {
             "result": {
-              "duration": 1349340000,
+              "duration": 2234274000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open \"youtube\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"youtube\"",
+                  "offset": 7
+                }
+              ],
+              "location": "step_definitions.ClassTaskSteps.iOpen(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28426000,
               "status": "passed"
             },
             "line": 6,
-            "name": "I open home page",
+            "name": "I verify title is \"YouTube\"",
             "match": {
-              "location": "step_definitions.HomePageTest.i_open_home_page()"
+              "arguments": [
+                {
+                  "val": "\"YouTube\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step_definitions.ClassTaskSteps.iVerifyTitleIs(java.lang.String)"
             },
-            "keyword": "Given "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 7749000,
+              "duration": 1221046000,
               "status": "passed"
             },
             "line": 7,
-            "name": "I verifies title is TLA Automation",
+            "name": "I click \"Trending\" button",
             "match": {
-              "location": "step_definitions.HomePageTest.i_verifies_title_is_tla_automation()"
+              "arguments": [
+                {
+                  "val": "\"Trending\"",
+                  "offset": 8
+                }
+              ],
+              "location": "step_definitions.ClassTaskSteps.iClickButton(java.lang.String)"
             },
-            "keyword": "Then "
+            "keyword": "When "
           }
         ],
         "tags": [
           {
-            "name": "@homPageTests"
+            "name": "@classTasks"
           },
           {
-            "name": "@smoke"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-08-20T02:00:08.493Z",
-        "before": [
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Kubanychbeks-MacBook-Pro.local\u0027, ip: \u00272001:579:a14c:250:7d84:f2f:1900:40da%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.6\u0027, java.version: \u002712.0.2\u0027\nDriver info: driver.version: RemoteWebDriver\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat step_definitions.Hooks.setUp(Hooks.java:16)\n",
-              "duration": 8232000,
-              "status": "failed"
-            },
-            "match": {
-              "location": "step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 14,
-        "name": "Verify Home Page title",
-        "description": "",
-        "id": "home-page-tests;verify-home-page-title",
-        "after": [
-          {
-            "result": {
-              "duration": 669000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hooks.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 144000,
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "I open home page",
-            "match": {
-              "location": "step_definitions.HomePageTest.i_open_home_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 115000,
-              "status": "skipped"
-            },
-            "line": 16,
-            "name": "I verifies title is TLA Automation",
-            "match": {
-              "location": "step_definitions.HomePageTest.i_verifies_title_is_tla_automation()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@homPageTests"
-          },
-          {
-            "name": "@smoke"
+            "name": "@youtube"
           }
         ]
       }
     ],
-    "name": "Home Page tests",
+    "name": "Class tasks",
     "description": "",
-    "id": "home-page-tests",
+    "id": "class-tasks",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/HomePage.feature",
+    "uri": "file:src/test/resources/features/classTaks.feature",
     "tags": [
       {
-        "name": "@homPageTests",
+        "name": "@classTasks",
         "type": "Tag",
         "location": {
           "line": 1,
@@ -149,67 +113,5 @@
         }
       }
     ]
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2020-08-20T02:00:08.515Z",
-        "before": [
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Kubanychbeks-MacBook-Pro.local\u0027, ip: \u00272001:579:a14c:250:7d84:f2f:1900:40da%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.6\u0027, java.version: \u002712.0.2\u0027\nDriver info: driver.version: RemoteWebDriver\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)\n\tat step_definitions.Hooks.setUp(Hooks.java:16)\n",
-              "duration": 481000,
-              "status": "failed"
-            },
-            "match": {
-              "location": "step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 3,
-        "name": "Verify initially table is empty",
-        "description": "",
-        "id": "user-management-page-tests;verify-initially-table-is-empty",
-        "after": [
-          {
-            "result": {
-              "duration": 113000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.Hooks.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 116000,
-              "status": "skipped"
-            },
-            "line": 4,
-            "name": "I open home page",
-            "match": {
-              "location": "step_definitions.HomePageTest.i_open_home_page()"
-            },
-            "keyword": "Given "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@smoke"
-          }
-        ]
-      }
-    ],
-    "name": "User Management page tests",
-    "description": "",
-    "id": "user-management-page-tests",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/UserMgt.feature",
-    "tags": []
   }
 ]

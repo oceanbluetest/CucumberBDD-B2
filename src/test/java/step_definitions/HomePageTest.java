@@ -3,9 +3,11 @@ package step_definitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import step_impl.HomePageImpl;
 import utils.Driver;
+import utils.SeleniumUtils;
 
-public class HomePageTest {
+public class HomePageTest extends HomePageImpl {
     @Given("I open home page")
     public void i_open_home_page() {
         Driver.getDriver().get("http://automation.techleadacademy.io");
