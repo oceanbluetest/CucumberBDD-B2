@@ -5,7 +5,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import utils.CucumberUtils;
 import utils.Driver;
+import utils.Screenshot;
 import utils.SeleniumUtils;
 
 public class ClassTaskSteps {
@@ -20,8 +22,9 @@ public class ClassTaskSteps {
             case "chase bank": Driver.getDriver().get("https://chase.com");
             break;
             default:
-                System.out.println("Invalid website name");
+                Driver.getDriver().get(websiteName);
         }
+        CucumberUtils.logInfo(" opened website: " + websiteName, true);
     }
 
     @Then("I verify title is {string}")
@@ -43,5 +46,6 @@ public class ClassTaskSteps {
                 System.out.println("Invalid button");
         }
         SeleniumUtils.click(Driver.getDriver().findElement(By.xpath(xpath)));
+        CucumberUtils.logInfo("clicked button: " + button, true);
     }
 }

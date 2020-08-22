@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-reports/cucumber-pretty",
                 "json:target/cucumber-reports/CucumberTestReport.json"
         },
-        tags = "@youtube",
-        dryRun = false
+        tags = "@registerUser",
+        dryRun = true
 )
 public class cukesRunner{
 }

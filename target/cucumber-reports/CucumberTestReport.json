@@ -1,32 +1,32 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-08-22T13:28:36.150Z",
+        "start_timestamp": "2020-08-22T15:55:10.098Z",
         "before": [
           {
             "result": {
-              "duration": 1594002000,
-              "status": "passed"
+              "duration": 497000,
+              "status": "skipped"
             },
             "match": {
-              "location": "step_definitions.Hooks.setUp()"
+              "location": "step_definitions.Hooks.setUp(io.cucumber.java.Scenario)"
             }
           }
         ],
-        "line": 4,
-        "name": "Testing youtube",
+        "line": 8,
+        "name": "Register new user",
         "description": "",
-        "id": "class-tasks;testing-youtube",
+        "id": "user-management-page-tests;register-new-user",
         "after": [
           {
             "result": {
-              "duration": 95064000,
-              "status": "passed"
+              "duration": 11000,
+              "status": "skipped"
             },
             "match": {
-              "location": "step_definitions.Hooks.tearDown()"
+              "location": "step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -35,15 +35,15 @@
         "steps": [
           {
             "result": {
-              "duration": 2234274000,
-              "status": "passed"
+              "duration": 826000,
+              "status": "skipped"
             },
-            "line": 5,
-            "name": "I open \"youtube\"",
+            "line": 9,
+            "name": "I open \"http://automation.techleadacademy.io/#/usermgt\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"youtube\"",
+                  "val": "\"http://automation.techleadacademy.io/#/usermgt\"",
                   "offset": 7
                 }
               ],
@@ -53,65 +53,71 @@
           },
           {
             "result": {
-              "duration": 28426000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 6,
-            "name": "I verify title is \"YouTube\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"YouTube\"",
-                  "offset": 18
-                }
-              ],
-              "location": "step_definitions.ClassTaskSteps.iVerifyTitleIs(java.lang.String)"
-            },
-            "keyword": "Then "
+            "line": 10,
+            "name": "I input \"Kuba\" as a \"firstname\"",
+            "match": {},
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 1221046000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 7,
-            "name": "I click \"Trending\" button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Trending\"",
-                  "offset": 8
-                }
-              ],
-              "location": "step_definitions.ClassTaskSteps.iClickButton(java.lang.String)"
+            "line": 11,
+            "name": "I input \"Z\" as a \"lastname\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
             },
-            "keyword": "When "
+            "line": 12,
+            "name": "I input \"444-444-4444\" as a \"phone number\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I input \"kuba@tla.com\" as a \"email\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "I input \"Instructor\" as a \"role\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "I click a button \"Submit\"",
+            "match": {},
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@classTasks"
-          },
-          {
-            "name": "@youtube"
+            "name": "@registerUser"
           }
         ]
       }
     ],
-    "name": "Class tasks",
+    "name": "User Management page tests",
     "description": "",
-    "id": "class-tasks",
+    "id": "user-management-page-tests",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/classTaks.feature",
-    "tags": [
-      {
-        "name": "@classTasks",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/UserMgt.feature",
+    "tags": []
   }
 ]
