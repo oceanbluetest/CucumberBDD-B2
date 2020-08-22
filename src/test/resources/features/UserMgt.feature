@@ -1,3 +1,4 @@
+@userMgt
 Feature: User Management page tests
   Background: Open user registration page
     Given I open "http://automation.techleadacademy.io/#/usermgt"

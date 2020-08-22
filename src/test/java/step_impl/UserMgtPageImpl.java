@@ -1,6 +1,7 @@
 package step_impl;
 
 import pages.UserMgtPage;
+import utils.CucumberUtils;
 import utils.SeleniumUtils;
 
 import java.util.Map;
@@ -28,6 +29,8 @@ public class UserMgtPageImpl {
                 default:
                     System.out.println("Invalid field type");
             }
+            CucumberUtils.logInfo("Entered data: " + map.get(key), false);
         }
+        CucumberUtils.logInfo("", true);
     }
 }
