@@ -5,17 +5,17 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Register new user",
+  "name": "Verify Login button",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@registerUser"
+      "name": "@verifyButton"
     }
   ]
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "I open \"http://automation.techleadacademy.io/#/usermgt\"",
@@ -24,58 +24,80 @@ formatter.step({
 formatter.match({
   "location": "step_definitions.ClassTaskSteps.iOpen(java.lang.String)"
 });
+formatter.write("08-22-2020 14:13:01 INFO:  opened website: http://automation.techleadacademy.io/#/usermgt");
+formatter.embedding("image/png", "embedded0.png", "Screenshot | 08-22-2020 14:13:01");
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "I input \"Kuba\" as a \"firstname\"",
+  "name": "I click a button \"login\"",
   "keyword": "When "
 });
-formatter.match({});
+formatter.match({
+  "location": "step_definitions.CommonPageTest.i_click_a_button(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "I input \"Z\" as a \"lastname\"",
-  "keyword": "And "
+  "name": "I verify title is \"Login Page\"",
+  "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "step_definitions.ClassTaskSteps.iVerifyTitleIs(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "I input \"444-444-4444\" as a \"phone number\"",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "I input \"kuba@tla.com\" as a \"email\"",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "I input \"Instructor\" as a \"role\"",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "I click a button \"Submit\"",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify User Database button",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@verifyButton"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I open \"http://automation.techleadacademy.io/#/usermgt\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "step_definitions.ClassTaskSteps.iOpen(java.lang.String)"
+});
+formatter.write("08-22-2020 14:13:01 INFO:  opened website: http://automation.techleadacademy.io/#/usermgt");
+formatter.embedding("image/png", "embedded1.png", "Screenshot | 08-22-2020 14:13:01");
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click a button \"access db\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "step_definitions.CommonPageTest.i_click_a_button(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I verify title is \"User DB\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "step_definitions.ClassTaskSteps.iVerifyTitleIs(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
 });
 });

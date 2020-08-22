@@ -1,11 +1,15 @@
 package step_definitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import pages.UserMgtPage;
+import step_impl.UserMgtPageImpl;
 import utils.SeleniumUtils;
 
-public class UserMgtPageTest {
+import java.util.Map;
+
+public class UserMgtPageTest extends UserMgtPageImpl {
     @Given("I navigate to UserMgt page")
     public void i_navigate_to_UserMgt_page() {
 
@@ -27,5 +31,10 @@ public class UserMgtPageTest {
            default:
                System.out.println("Invalid field type");
        }
+    }
+
+    @Given("I enter following data:")
+    public void i_enter_following_data(Map<String, String> dataTable) {
+        fillRegistrationForm(dataTable);
     }
 }

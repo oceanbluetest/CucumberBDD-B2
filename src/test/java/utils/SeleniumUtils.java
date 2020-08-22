@@ -79,7 +79,7 @@ public class SeleniumUtils {
                 if(i == 0){
                     executor.executeScript("arguments[0].setAttribute('style', arguments[1]);", element, "color: black; border:3px solid red; background: yellow");
                 }else {
-                    sleep(1000);
+                    sleep(300);
                     executor.executeScript("arguments[0].setAttribute('style', arguments[1]);", element, "");
                 }
             }catch (Exception e){

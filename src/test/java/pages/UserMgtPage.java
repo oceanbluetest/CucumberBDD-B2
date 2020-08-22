@@ -29,6 +29,12 @@ public class UserMgtPage {
     @FindBy(id = "submit-btn")
     public WebElement submitBtn;
 
+    @FindBy(id = "login-btn")
+    public WebElement logInBtn;
+
+    @FindBy(id = "access-db-btn")
+    public WebElement accessDbBtn;
+
     public void selectRole(String roleType){
         Select select = new Select(selectRole);
         select.selectByVisibleText(roleType);
