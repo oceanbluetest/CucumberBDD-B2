@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="runners.cukesRunner" time="4.48" tests="1" errors="0" skipped="0" failures="1">
+<testsuite name="runners.cukesRunner" time="8.625" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="12.0.2+10"/>
@@ -58,52 +58,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="Testing chase bank" classname="Class tasks" time="4.48">
-    <failure message="expected:&lt;...e Online | Chase.com[S]&gt; but was:&lt;...e Online | Chase.com[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<...e Online | Chase.com[S]> but was:<...e Online | Chase.com[]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at step_definitions.ClassTaskSteps.iVerifyTitleIs(ClassTaskSteps.java:32)
-	at ✽.I verify title is "Credit Card, Mortgage, Banking, Auto | Chase Online | Chase.comS"(file:///Users/kuba/Projects/TLA/Selenium/Projects%20(IntelliJ)/CucumberBDD/src/test/resources/features/classTaks.feature:18)
-]]></failure>
-    <system-out><![CDATA[
-@classTasks @chase
-Scenario: Testing chase bank                                                                &amp#27;[90m# src/test/resources/features/classTaks.feature:16&amp#27;[0m
-
-    08-22-2020 15:08:25 INFO:  opened website: chase bank
-
-
-    Embedding Screenshot | 08-22-2020 15:08:25 [image/png 261412 bytes]
-
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI open &amp#27;[0m&amp#27;[32m&amp#27;[1m"chase bank"&amp#27;[0m                                                                 &amp#27;[90m# step_definitions.ClassTaskSteps.iOpen(java.lang.String)&amp#27;[0m
-  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI verify title is &amp#27;[0m&amp#27;[31m&amp#27;[1m"Credit Card, Mortgage, Banking, Auto | Chase Online | Chase.comS"&amp#27;[0m &amp#27;[90m# step_definitions.ClassTaskSteps.iVerifyTitleIs(java.lang.String)&amp#27;[0m
-      &amp#27;[31morg.junit.ComparisonFailure: expected:<...e Online | Chase.com[S]> but was:<...e Online | Chase.com[]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at step_definitions.ClassTaskSteps.iVerifyTitleIs(ClassTaskSteps.java:32)
-	at ✽.I verify title is "Credit Card, Mortgage, Banking, Auto | Chase Online | Chase.comS"(file:///Users/kuba/Projects/TLA/Selenium/Projects%20(IntelliJ)/CucumberBDD/src/test/resources/features/classTaks.feature:18)
-&amp#27;[0m
-  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI click &amp#27;[0m&amp#27;[36m&amp#27;[1m"ATM & branch"&amp#27;[0m&amp#27;[36m button&amp#27;[0m                                                        &amp#27;[90m# step_definitions.ClassTaskSteps.iClickButton(java.lang.String)&amp#27;[0m
-
-    Embedding Screenshot | 08-22-2020 15:08:25 [image/png 262587 bytes]
-
-]]></system-out>
-    <system-err><![CDATA[Aug 22, 2020 3:08:22 PM io.cucumber.junit.Cucumber <init>
-WARNING: By default Cucumber is running in --non-strict mode.
-This default will change to --strict and --non-strict will be removed.
-You can use --strict or @CucumberOptions(strict = true) to suppress this warning
-Aug 22, 2020 3:08:22 PM io.cucumber.junit.Cucumber <init>
-WARNING: By default Cucumber is running in --non-strict mode.
-This default will change to --strict and --non-strict will be removed.
-You can use --strict or @CucumberOptions(strict = true) to suppress this warning
-SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 35885
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Aug 22, 2020 3:08:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
+  <testcase name="Verify user log in credentials" classname="Login Page tests" time="8.625"/>
+  <testcase name="Verify user log in credentials" classname="Login Page tests" time="7.19"/>
+  <testcase name="Verify user log in credentials" classname="Login Page tests" time="6.874"/>
 </testsuite>

@@ -39,7 +39,7 @@ public class UserMgtPageTest extends UserMgtPageImpl {
            default:
                System.out.println("Invalid field type");
        }
-        CucumberUtils.logInfo("Input <" + input + "> in <" + inputField + "> field", true);
+        CucumberUtils.logInfo("Input " + input + " in " + inputField + " field", true);
     }
 
     @Given("I enter following data:")

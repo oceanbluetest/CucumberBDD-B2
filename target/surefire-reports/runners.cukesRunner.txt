@@ -1,11 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: runners.cukesRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.534 sec <<< FAILURE! - in runners.cukesRunner
-Testing chase bank(Class tasks)  Time elapsed: 4.48 sec  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<...e Online | Chase.com[S]> but was:<...e Online | Chase.com[]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at step_definitions.ClassTaskSteps.iVerifyTitleIs(ClassTaskSteps.java:32)
-	at ✽.I verify title is "Credit Card, Mortgage, Banking, Auto | Chase Online | Chase.comS"(file:///Users/kuba/Projects/TLA/Selenium/Projects%20(IntelliJ)/CucumberBDD/src/test/resources/features/classTaks.feature:18)
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.033 sec - in runners.cukesRunner

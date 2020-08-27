@@ -6,7 +6,6 @@ import io.cucumber.java.Scenario;
 import org.openqa.selenium.WebDriver;
 import utils.Driver;
 import utils.Screenshot;
-import utils.SeleniumUtils;
 
 import java.util.concurrent.TimeUnit;
 
