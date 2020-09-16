@@ -4,7 +4,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import pojos.User;
 import utils.Driver;
+
+import java.util.List;
 
 public class UserMgtPage {
     public UserMgtPage(){
@@ -34,6 +37,11 @@ public class UserMgtPage {
 
     @FindBy(id = "access-db-btn")
     public WebElement accessDbBtn;
+
+    @FindBy(xpath = "//table[@id='list-table']/tbody/tr")
+    public List<WebElement> tableRows;
+
+    public static List<User> userList = null;
 
     public void selectRole(String roleType){
         Select select = new Select(selectRole);

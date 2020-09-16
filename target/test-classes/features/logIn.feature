@@ -37,3 +37,4 @@ Feature: Login Page tests
       | student@techleadacademy.io    | john.smith$      | Student Page    |
       | instructor@techleadacademy.io | kate.anderson$   | Instructor Page |
       | mentor@techleadacademy.io     | stephanie.adams$ | Mentor Page     |
+
