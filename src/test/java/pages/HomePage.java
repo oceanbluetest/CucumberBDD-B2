@@ -10,8 +10,8 @@ public class HomePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(id = "")
-    public WebElement element;
+    @FindBy(id = "main-text")
+    public WebElement mainText;
 
 
 }

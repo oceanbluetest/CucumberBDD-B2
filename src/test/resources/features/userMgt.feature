@@ -45,3 +45,4 @@ Feature: User Management page tests
       | John      | Smith    | 888-888-8888 | jsmith@gmail.com  | Student    |
       | Samantha  | Wilson   | 55/88/8976   | swilson@gmail.com | Mentor     |
     Then Verifies new users are populated in user table
+

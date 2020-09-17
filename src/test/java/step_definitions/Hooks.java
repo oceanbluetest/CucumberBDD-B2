@@ -26,6 +26,6 @@ public class Hooks {
         if (scenario.isFailed()) {
             Screenshot.takeScreenshot();
         }
-        //Driver.quitDriver();
+        Driver.quitDriver();
     }
 }
