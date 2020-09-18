@@ -17,4 +17,4 @@ Feature: Home Page tests
   @parameterType
   Scenario: Parameter type example
     Given I open "http://automation.techleadacademy.io/#/home"
-    Then Verifies main text contains words such as WebDriver, Selenium, CSS
+    Then Verifies main text contains words such as WebDriver, Selenium, CSS, Text
